@@ -1,15 +1,16 @@
-import style from "@/styles/Home.module.css";
-import Image from "next/image";
-import Card from './components/Card'
-import pokeBall from "@/public/imagens/pokeball.png";
- 
+import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import Card from '../components/Card';
+import Pokeball from "@/public/imagens/pokeball.png"
+
 export async function getStaticProps() {
   const maxPokemons = 251;
-  const api = "https://pokeapi.co/api/v2/pokemon/";
+  const api = `https://pokeapi.co/api/v2/pokemon/`;
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
   const data = await res.json();
 
+  // add pokemon index
   data.results.forEach((item, index) => {
     item.id = index + 1;
   });
@@ -24,20 +25,15 @@ export async function getStaticProps() {
 export default function Home({ pokemons }) {
   return (
     <>
-      <div className={style.title_container}>
-        <h1 className={style.title}>
+      <div className={styles.title_container}>
+        <h1 className={styles.title}>
           Poke<span>Next</span>
         </h1>
-        <Image
-          className={style.logo}
-          src={pokeBall}
-          alt="Imagem do Charizard"
-        />
+        <Image src={Pokeball} width="50" height="50" alt="PokeNext" />
       </div>
-
-      <div className={style.pokemon_container}>
+      <div className={styles.pokemon_container}>
         {pokemons.map((pokemon) => (
-          <Card key={pokemon.id} pokemon={pokemon}/>
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </>

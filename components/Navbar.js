@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PokeNext from "@/public/imagens/pokeball.png"
-import styles from "../../styles/NavBar.module.css"
+import styles from "../styles/NavBar.module.css"
 
 export default function Navbar() {
   return (
