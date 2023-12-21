@@ -38,7 +38,7 @@ export default function Pokemon({ pokemon }) {
         <h1 className={style.title}>{pokemon.name}</h1>
         <Image
           className={style.imagem}
-          src={`https://img.pokemondb.net/artwork/large/${pokemon.name}.jpg`}
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
           width="200"
           height="200"
           alt={pokemon.name}

@@ -7,7 +7,8 @@ export default function Card({pokemon}) {
         <div className={styles.card}>
             <Image 
             className={styles.img}
-            src={`https://img.pokemondb.net/artwork/large/${pokemon.name}.jpg`}
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
+            // src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
             width="120"
             height="120"
             alt={pokemon.name}
