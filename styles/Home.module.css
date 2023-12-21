@@ -44,3 +44,14 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+  .pokemon_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 354px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}

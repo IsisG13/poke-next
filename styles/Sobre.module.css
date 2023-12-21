@@ -1,26 +1,35 @@
 .sobre {
-    text-align: center;
-    height: auto;
-    width: 40%;
-    margin-left: 31%;
+  text-align: center;
+  height: auto;
+  width: 40%;
+  margin-left: 31%;
 }
 
 .sobre h1 {
-    font-size: 2em;
-    /* font-size: 200%; */
-    margin-bottom: 1em;
+  font-size: 2em;
+  /* font-size: 200%; */
+  margin-bottom: 1em;
 }
 
 .sobre p {
-    color: gray;
-    margin-bottom: 1.5em;
-    /* margin-bottom: 2%; */
+  color: gray;
+  margin-bottom: 1.5em;
+  /* margin-bottom: 2%; */
 }
 
-/* .img {
+@media (max-width: 800px) {
+  .sobre {
+    text-align: center;
+    height: auto;
+    width: 103%;
+    margin-left: -3%;
+  }
+
+  .img {
     height: auto;
     width: 70%;
     color: transparent;
     margin-top: 15%;
     margin-left: 10%;
-} */
+  }
+}

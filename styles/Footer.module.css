@@ -1,14 +1,27 @@
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 150px;
+  color: #fff;
+  margin-top: 2em;
+  border-top: 3px solid #111;
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333;
-    height: 150px;
+    height: 109px;
     color: #fff;
     margin-top: 2em;
     border-top: 3px solid #111;
   }
-  
-  .footer span {
-    font-weight: bold;
-  }
+}
