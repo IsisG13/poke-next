@@ -7,6 +7,7 @@
   color: #fff;
   margin-top: 2em;
   border-top: 3px solid #111;
+  flex-direction: column;
 }
 
 .footer span {
@@ -23,5 +24,6 @@
     color: #fff;
     margin-top: 2em;
     border-top: 3px solid #111;
+    flex-direction: column;
   }
 }
